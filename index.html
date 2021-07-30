@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--скролл-->
+  <link rel=" stylesheet " href=" https://unpkg.com/simplebar@latest/dist/simplebar.css " />
+  <!--селектор-->
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Blanchard</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container__big">
+        <div class="container">
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <a href="#" class="header__logo">
+            <img src="img/logo.svg" alt="">
+          </a>
+
+
+          <nav class="header__nav">
+            <ul class="header__list-top">
+              <li class="header__item-top">
+                <a href="#about" class="header__point-top">
+                  О нас
+                </a>
+              </li>
+              <li class="header__item-top">
+                <a href="#" class="header__point-top">
+                  Галерея
+                </a>
+              </li>
+              <li class="header__item-top">
+                <a href="" class="header__point-top">
+                  Каталог
+                </a>
+              </li>
+              <li class="header__item-top">
+                <a href="" class="header__point-top">
+                  События
+                </a>
+              </li>
+              <li class="header__item-top">
+                <a href="" class="header__point-top">
+                  Издания
+                </a>
+              </li>
+              <li class="header__item-top">
+                <a href="" class="header__point-top">
+                  Проекты
+                </a>
+              </li>
+              <li class="header__item-top">
+                <a href="" class="header__point-top">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+            <div class="header__form-nav">
+              <a href="#" class="header__come" id="login-button">
+                Войти
+              </a>
+
+
+
+              <div class="header__form-come" id="container">
+                <h2>Авторизация</h2>
+                <span class="close-btn">
+                  <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5 23.8737L36.147 13.2267L36.7733 13.853L26.1263 24.5L31.7412 30.1149L36.7733 35.147L36.147 35.7733L25.5 25.1263L14.853 35.7733L14.2267 35.147L24.8737 24.5L14.2267 13.853L14.853 13.2267L25.5 23.8737Z" fill="#666666" />
+                  </svg>
+                </span>
+
+                <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                  <input type="email" name="email" placeholder="E-mail">
+                  <input type="password" name="pass" placeholder="Пароль">
+                  <a href="#">Войти в личный кабинет</a>
+                  <div id="remember-container">
+                    <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked" />
+                    <span id="remember">Запомнить меня</span>
+                    <span id="forgotten">Забыли пароль?</span>
+                  </div>
+                </form>
+              </div>
+
+
+              <div class="header__form-come" id="forgotten-container">
+                <h2>Забыли пароль</h2>
+                <span class="close-btn">
+                  <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5 23.8737L36.147 13.2267L36.7733 13.853L26.1263 24.5L31.7412 30.1149L36.7733 35.147L36.147 35.7733L25.5 25.1263L14.853 35.7733L14.2267 35.147L24.8737 24.5L14.2267 13.853L14.853 13.2267L25.5 23.8737Z" fill="#666666" />
+                  </svg>
+                </span>
+
+                <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                  <input type="email" name="email" placeholder="E-mail">
+                  <a href="#" class="orange-btn">Получить новый пароль</a>
+                </form>
+              </div>
+
+            </div>
+          </nav>
+          <!--форма поиска по сайту-->
+          <form class="header__search" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <button class="header__search-btn">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white" />
+              </svg>
+            </button>
+            <input class="header__search-text" type="search" name="question" placeholder="Поиск по сайту">
+          </form>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="header__bottom">
+      <div class="container__big">
+        <div class="container">
+          <ul class="header__list">
+            <li class="header__item">
+              <select class="header__select" name="s4">
+                <option value="1">Реализм</option>
+                <option value="2">Венецианов</option>
+                <option value="3">Коро</option>
+                <option value="4">Крихубер</option>
+                <option value="5">Гис</option>
+                <option value="6">Диаз</option>
+                <option value="7">Домье</option>
+              </select>
+            </li>
+            <li class="header__item">
+              <select class="header__select" name="s5">
+                <option value="1">Импрессионизм</option>
+                <option value="2">Мане</option>
+                <option value="3">Моне</option>
+                <option value="4">Ренуар</option>
+                <option value="5">Тинторетто</option>
+                <option value="6">Дега</option>
+                <option value="7">Писсаро</option>
+                <option value="8">Сислей</option>
+              </select>
+            </li>
+            <li class="header__item">
+              <select class="header__select" name="s1">
+                <option value="1">Постмпрессионизм</option>
+                <option value="2">Сезанн</option>
+                <option value="3">Гоген</option>
+                <option value="4">Чонтвари</option>
+                <option value="5">Ван Гог</option>
+                <option value="6">Россо</option>
+                <option value="7">Прендергаст</option>
+              </select>
+            </li>
+            <li class="header__item">
+              <select class="header__select" name="s2">
+                <option value="1">Авангард</option>
+                <option value="2">Пиросмани</option>
+                <option value="3">Кульбин</option>
+                <option value="4">Бранкузи</option>
+                <option value="5">Шварц</option>
+                <option value="6">Малевич</option>
+                <option value="7">Гончарова</option>
+              </select>
+            </li>
+            <li class="header__item">
+              <select class="header__select" name="s3">
+                <option value="1">Футуризм</option>
+                <option value="2">Балла</option>
+                <option value="3">Карра</option>
+                <option value="4">Бурлюк</option>
+                <option value="5">Боччони</option>
+                <option value="6">Руссоло</option>
+              </select>
+            </li>
+          </ul>
+
+          <form class="header__search" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <button class="header__search-btn">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white" />
+              </svg>
+            </button>
+            <input class="header__search-text" type="search" name="question" placeholder="Поиск по сайту">
+          </form>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container__big">
+        <div class="container">
+          <h1 class="hero__title">
+            Прикоснитесь к прекрасному
+          </h1>
+          <p class="hero__text">
+            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+          </p>
+          <a href="#" class="hero__btn">
+            Подписаться на рассылку
+          </a>
+        </div>
+        <ul class="hero__slides">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+
+    </section>
+    <section class="about">
+      <div class="container__big">
+        <div class="container" id="about">
+          <h2 class="cap">О нас</h2>
+          <p class="about__text">
+            Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer></footer>
+  <!--селект-->
+  <script src="js/choices.min.js"></script>
+  <script src="js/choices.js"></script>
+  <!--форма регистрации , для бургера jqueri.min.js-->
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/form.js"></script>
+  <!--скролл-->
+  <script src=" https://unpkg.com/simplebar@latest/dist/simplebar.min.js "> </script>
+  <script src="js/skroll.js"></script>
+  <!--бургер-->
+  <script src="js/burger.js"></script>
+  <!--разворачивание формы поиска на мобиле-->
+  <script src="js/linza.js"></script>
+
+</body>
+
+</html>
