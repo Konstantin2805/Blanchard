@@ -1,0 +1,33 @@
+.projects .container {
+  margin-bottom: 80px;
+}
+.projects .cap {
+  margin-bottom: 30px;
+}
+
+.projects__text {
+  max-width: 1080px;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+}
+.projects__name {
+  margin-bottom: 23px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+.projects__list {
+  display: flex;
+}
+.projects__item {
+  margin-right: 50px;
+}
+.projects__item:nth-child(3n) {
+  margin-right: 0;
+}
