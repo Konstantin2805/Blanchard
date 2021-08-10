@@ -7,17 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <!--скролл-->
-  <link rel=" stylesheet " href=" https://unpkg.com/simplebar@latest/dist/simplebar.css " />
+  <link rel=" stylesheet " href="libe/simplebar.css " />
   <!--селектор-->
-  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="libe/choices.min.css">
+    <!--сдайдер-->
+    <link rel="stylesheet" href="libe/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+
   <title>Blanchard</title>
 </head>
 
 <body>
   <header class="header">
     <div class="header__top">
-      <div class="container__big">
+
         <div class="container">
           <div class="header__burger">
             <span></span>
@@ -111,26 +114,37 @@
 
             </div>
           </nav>
-          <!--форма поиска по сайту-->
-          <form class="header__search" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <button class="header__search-btn">
+          <div class="header__linza">
+            <button class="header__top-search">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white" />
               </svg>
             </button>
-            <input class="header__search-text" type="search" name="question" placeholder="Поиск по сайту">
-          </form>
+            <form class="header__search" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <button class="header__search-btn">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white" />
+                </svg>
+              </button>
+              <input class="header__search-text" type="search" name="question" placeholder="Поиск по сайту">
+            </form>
+          </div>
+
+
+
+
 
 
         </div>
 
-      </div>
+
 
 
     </div>
     <div class="header__bottom">
-      <div class="container__big">
+
         <div class="container">
           <ul class="header__list">
             <li class="header__item">
@@ -203,13 +217,13 @@
 
 
         </div>
-      </div>
+
 
     </div>
   </header>
   <main>
     <section class="hero">
-      <div class="container__big">
+
         <div class="container">
           <h1 class="hero__title">
             Прикоснитесь к прекрасному
@@ -220,29 +234,37 @@
           <a href="#" class="hero__btn">
             Подписаться на рассылку
           </a>
+
         </div>
-        <ul class="hero__slides">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+        <div class="swiper-container mySwiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide slide-1" ></div>
+            <div class="swiper-slide slide slide-2" ></div>
+            <div class="swiper-slide slide slide-3" ></div>
+          </div>
+        </div>
+
+
+
+
 
 
     </section>
     <section class="about">
-      <div class="container__big">
+
         <div class="container" id="about">
           <h2 class="cap">О нас</h2>
           <p class="about__text">
             Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
           </p>
         </div>
-      </div>
+
 
     </section>
-    <section class="gallery">
-      <div class="container__big">
+    <!--<section class="gallery">
+
         <div class="container">
           <h2 class="cap">
             Галерея
@@ -252,78 +274,166 @@
             <div class="gallery__info">
               <div class="gallery__info-content">
                 <span>Фильтр:</span>
-                <div class="gallery__select">
-                  <select name="art" class="gallery__art">
-                    <option value="">Живопись</option>
-                    <option value="">Рисунок</option>
-                    <option value="">Скульптура</option>
+
+                  <select name="art" class="gallery__art" size="2">
+                    <option value="one" onclic="alert('1')" >Живопись</option>
+                    <option value="two" onclic="alert('2')"  >Рисунок</option>
+                    <option value="three" onclic="alert('3')">Скульптура</option>
                   </select>
                 </div>
-              </div>
               <p class="gallery__info-text">
                 Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией.
               </p>
-
-
             </div>
-            <div class="gallery__painting">
-              <div class="gallery__pointer">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666" />
-                  <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black" />
-                  <path d="M16 20L11 15L16 10" stroke="white" />
-                </svg>
-                <span>1/2</span>
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666" />
-                  <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black" />
-                  <path d="M14 20L19 15L14 10" stroke="white" />
-                </svg>
+            <div class="gallery__photo">
+              <div class="gallery__nav">
+                <div class="swiper-button-prev">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666" />
+                    <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black" />
+                    <path d="M16 20L11 15L16 10" stroke="white" />
+                  </svg>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666" />
+                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black" />
+                    <path d="M14 20L19 15L14 10" stroke="white" />
+                  </svg>
+                </div>
               </div>
-              <ul class="gallery__list">
-                <li class="gallery__item">
-                  <img src="img/painting1.jpg" alt="">
-                </li>
-                <li class="gallery__item">
-                  <img src="img/painting2.jpg" alt="">
-                </li>
-                <li class="gallery__item">
-                  <img src="img/painting3.jpg" alt="">
-                </li>
-                <li class="gallery__item">
-                  <img src="img/painting4.jpg" alt="">
-                </li>
-                <li class="gallery__item">
-                  <img src="img/painting5.jpg" alt="">
-                </li>
-                <li class="gallery__item">
-                  <img src="img/painting6.jpg" alt="">
-                </li>
-              </ul>
+              <div class="gallery-swiper swiper-container mySwiper2">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide slide-big gallery__paint">
+
+                    <div class="swiper-container swiper-inside painting">
+                      <div class="swiper-wrapper">
 
 
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting1-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting2-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting3-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting4-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting5-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting6-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting1-2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting2-2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting3-2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting4-2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting5-2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/painting6-2.jpg" alt="">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide-big gallery__draw">
+
+                    <div class="swiper-container swiper-inside drawing">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/drawing1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/drawing2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/drawing3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/drawing4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/drawing5.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/drawing6.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide-big gallery__sculpture">
+
+                    <div class="swiper-container swiper-inside sculpture">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/sculpture1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/sculpture2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/sculpture3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/sculpture4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/sculpture5.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-little">
+                          <img src="img/sculpture6.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
             </div>
-
 
           </div>
         </div>
-      </div>
-  </main>
+    </section>
+  </main>-->
   <footer></footer>
-  <!--селект-->
-  <script src="js/choices.min.js"></script>
+  <!--селект header-->
+  <script src="libe/choices.min.js"></script>
   <script src="js/choices.js"></script>
   <!--форма регистрации , для бургера jqueri.min.js-->
-  <script src="js/TweenMax.min.js"></script>
-  <script src="js/jquery.min.js"></script>
+  <script src="libe/TweenMax.min.js"></script>
+  <script src="libe/jquery.min.js"></script>
   <script src="js/form.js"></script>
   <!--скролл-->
-  <script src=" https://unpkg.com/simplebar@latest/dist/simplebar.min.js "> </script>
+  <script src="libe/simplebar.min.js "> </script>
   <script src="js/skroll.js"></script>
   <!--бургер-->
   <script src="js/burger.js"></script>
   <!--разворачивание формы поиска на мобиле-->
   <script src="js/linza.js"></script>
+  <!--слайдер-->
+  <script src="libe/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <!--селект gallery-->
+  <script src="js/gallery_choices.js"></script>
+  <!--tabs галереи-->
+  <script src="js/galery1.js"></script>
 
 </body>
 

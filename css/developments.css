@@ -1,0 +1,58 @@
+.developments .container {
+  margin-bottom: 80px;
+}
+.developments .cap {
+  margin-bottom: 30px;
+}
+.developments__list {
+  display: flex;
+}
+.developments__card {
+  width: calc(500 / 1684 * 100%);
+  margin-right: 50px;
+  margin-bottom: 67px;
+}
+.developments__card-bottom {
+  padding: 13px 38px 43px 50px;
+  min-height: 400px;
+  border: 1px solid #cacaca;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.developments__card:nth-child(3n) {
+  margin-right: 0;
+}
+.dewelopments__card span {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  color: #999999;
+}
+
+.developments__cap {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+}
+.developments__position-btn {
+  display: flex;
+  justify-content: center;
+}
+.developments__btn {
+  padding: 17px 35px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #9d5cd0;
+  border: 2px solid #9d5cd0;
+  border-radius: 100px;
+}

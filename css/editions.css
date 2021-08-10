@@ -1,0 +1,123 @@
+
+.editions .container__big {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+  background-image: url("../img/editions.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.editions .cap {
+  color: #ffffff;
+}
+/*checkbox ===========================*/
+.visually-hidden {
+  /* невидимый заголовок*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.editions__categories {
+  width: 241px;
+  height: 379px;
+  margin-bottom: 32px;
+
+  background-color: transparent;
+}
+
+.check-title {
+  margin-top: 0;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.ch {
+  width: 241px;
+  margin-bottom: -3px;
+}
+
+.label-check {
+  max-width: 241px;
+  position: relative;
+  display: block;
+  padding-left: 24px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.input-check + .span-check {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  z-index: 1;
+  display: block;
+  border: 1px solid #999999;
+  border-radius: 3px;
+}
+
+.input-check + .span-check:before {
+  margin-bottom: 20px;
+  content: url("../img/o.svg");
+  position: absolute;
+  top: -1px;
+  right: 0;
+  bottom: 0;
+  left: -1px;
+  z-index: 2;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 10px;
+  border: 1px solid #ccb26e;
+  border-radius: 3px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.input-check:checked + .span-check:before {
+  opacity: 1;
+}
+/*checkbox======================*/
+
+.editions__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.editions__range {
+  width: 277px;
+  height: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+.editions__content {
+  display: flex;
+}
+
+.editions__list {
+  display: flex;
+}
