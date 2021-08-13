@@ -147,59 +147,69 @@
 
         <div class="container">
           <ul class="header__list">
-            <li class="header__item">
-              <select class="header__select" name="s4">
+            <li class="header__item" name="s1">
+              <select class="header__select" >
                 <option value="1">Реализм</option>
-                <option value="2">Венецианов</option>
-                <option value="3">Коро</option>
-                <option value="4">Крихубер</option>
-                <option value="5">Гис</option>
-                <option value="6">Диаз</option>
-                <option value="7">Домье</option>
+                <option value="2">Тинторетто</option>
+                <option value="3">Фридрих</option>
+                <option value="4">Леонардо</option>
+                <option value="5">Верроккьо</option>
+                <option value="6">Венецианов</option>
+                <option value="7">Коро</option>
+                <option value="8">Крихубер</option>
+                <option value="9">Гис</option>
+                <option value="10">Диаз</option>
+                <option value="11">Домье</option>
               </select>
             </li>
-            <li class="header__item">
-              <select class="header__select" name="s5">
+            <li class="header__item" name="s2" >
+              <select class="header__select" >
                 <option value="1">Импрессионизм</option>
                 <option value="2">Мане</option>
                 <option value="3">Моне</option>
                 <option value="4">Ренуар</option>
-                <option value="5">Тинторетто</option>
+                <option value="5">Сислей</option>
                 <option value="6">Дега</option>
                 <option value="7">Писсаро</option>
-                <option value="8">Сислей</option>
+
               </select>
             </li>
-            <li class="header__item">
-              <select class="header__select" name="s1">
+            <li class="header__item" name="s3">
+              <select class="header__select" >
                 <option value="1">Постмпрессионизм</option>
                 <option value="2">Сезанн</option>
                 <option value="3">Гоген</option>
-                <option value="4">Чонтвари</option>
+                <option value="4">Сёра</option>
                 <option value="5">Ван Гог</option>
                 <option value="6">Россо</option>
                 <option value="7">Прендергаст</option>
+                <option value="8">Чонтвари</option>
               </select>
             </li>
-            <li class="header__item">
-              <select class="header__select" name="s2">
+            <li class="header__item" name="s4">
+              <select class="header__select" >
                 <option value="1">Авангард</option>
-                <option value="2">Пиросмани</option>
-                <option value="3">Кульбин</option>
-                <option value="4">Бранкузи</option>
-                <option value="5">Шварц</option>
-                <option value="6">Малевич</option>
+                <option value="2">Кадчинскй</option>
+                <option value="3">Маринетти</option>
+                <option value="4">Малевич</option>
+                <option value="5">Пикссо</option>
+                <option value="6">Шварц</option>
                 <option value="7">Гончарова</option>
+                <option value="8">Пиросмани</option>
+                <option value="9">Кульбин</option>
+                <option value="10">Бранкузи</option>
               </select>
             </li>
-            <li class="header__item">
-              <select class="header__select" name="s3">
+            <li class="header__item" name="s5" >
+              <select class="header__select" >
                 <option value="1">Футуризм</option>
-                <option value="2">Балла</option>
-                <option value="3">Карра</option>
-                <option value="4">Бурлюк</option>
-                <option value="5">Боччони</option>
+                <option value="2">Карра</option>
+                <option value="3">Балла</option>
+                <option value="4">Прателла</option>
+                <option value="5">Северини</option>
                 <option value="6">Руссоло</option>
+                <option value="7">Бурлюк</option>
+                <option value="8">Боччони</option>
               </select>
             </li>
           </ul>
@@ -222,7 +232,7 @@
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
 
         <div class="container">
           <h1 class="hero__title">
@@ -252,7 +262,7 @@
 
 
     </section>
-    <section class="about">
+    <section class="about" id="about">
 
         <div class="container" id="about">
           <h2 class="cap">О нас</h2>
@@ -263,155 +273,150 @@
 
 
     </section>
-    <!--<section class="gallery">
+    <section class="gallery" id="gallery">
 
         <div class="container">
-          <h2 class="cap">
-            Галерея
-          </h2>
-          <div class="gallery__content">
 
-            <div class="gallery__info">
-              <div class="gallery__info-content">
-                <span>Фильтр:</span>
+          <div class="gallery__wrap">
 
-                  <select name="art" class="gallery__art" size="2">
-                    <option value="one" onclic="alert('1')" >Живопись</option>
-                    <option value="two" onclic="alert('2')"  >Рисунок</option>
-                    <option value="three" onclic="alert('3')">Скульптура</option>
+            <div class="gallery__select">
+              <div class="gallery__select-wrap">
+                <h2 class="cap">
+                  Галерея
+                </h2>
+                  <span>Фильтр:</span>
+                  <select name="art" class="gallery__art" id="selectCustom">
+                    <option value="0" selected>Живопись</option>
+                    <option value="1">Рисунок</option>
+                    <option value="2">Скульптура</option>
                   </select>
-                </div>
-              <p class="gallery__info-text">
-                Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией.
+
+              </div>
+              <p class="gallery__text">
+                Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь,</a>  либо воспользуйтесь лицензией.
               </p>
             </div>
-            <div class="gallery__photo">
+            <div class="gallery__slider">
               <div class="gallery__nav">
-                <div class="swiper-button-prev">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666" />
-                    <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black" />
-                    <path d="M16 20L11 15L16 10" stroke="white" />
-                  </svg>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666" />
-                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black" />
-                    <path d="M14 20L19 15L14 10" stroke="white" />
-                  </svg>
-                </div>
+                <div class="swiper-button-prev"></div>
+                 <div class="pagination-custom" id="pag"></div>
+                <div class="swiper-button-next"></div>
+
               </div>
-              <div class="gallery-swiper swiper-container mySwiper2">
-                <div class="swiper-wrapper">
+              <div class="gallery__swiper-big swiper-container">
 
-                  <div class="swiper-slide slide-big gallery__paint">
 
-                    <div class="swiper-container swiper-inside painting">
+                  <div class="swiper-pagination"></div>
+
+                <div class="gallery__wrapper-big swiper-wrapper" >
+
+                  <div class="gallery__slide-big swiper-slide swiper-container ">
+
+
                       <div class="swiper-wrapper">
-
-
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting1-1.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting2-1.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting3-1.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting4-1.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting5-1.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting6-1.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting1-2.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting2-2.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting3-2.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting4-2.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting5-2.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/painting6-2.jpg" alt="">
                         </div>
 
                       </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide-big gallery__draw">
+                      <div class="swiper-pagination"></div>
 
-                    <div class="swiper-container swiper-inside drawing">
+
+
+                  </div>
+                  <div class="gallery__slide-big swiper-slide swiper-container">
+
                       <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/drawing1.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/drawing2.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/drawing3.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/drawing4.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/drawing5.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/drawing6.jpg" alt="">
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide-big gallery__sculpture">
 
-                    <div class="swiper-container swiper-inside sculpture">
+                      </div>
+                      <div class="swiper-pagination"></div>
+
+
+                  </div>
+                  <div class="gallery__slide-big swiper-slide swiper-container">
+
                       <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/sculpture1.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/sculpture2.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/sculpture3.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/sculpture4.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/sculpture5.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-little">
+                        <div class="swiper-slide">
                           <img src="img/sculpture6.jpg" alt="">
                         </div>
                       </div>
-                    </div>
+                      <div class="swiper-pagination"></div>
+
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
               </div>
             </div>
 
           </div>
         </div>
     </section>
-  </main>-->
+  </main>
   <footer></footer>
   <!--селект header-->
   <script src="libe/choices.min.js"></script>
@@ -433,7 +438,7 @@
   <!--селект gallery-->
   <script src="js/gallery_choices.js"></script>
   <!--tabs галереи-->
-  <script src="js/galery1.js"></script>
+  <!--<script src="js/galery1.js"></script>-->
 
 </body>
 
