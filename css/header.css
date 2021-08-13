@@ -302,35 +302,122 @@
 .header__item .is-focused .choices__list--dropdown .choices__item {
   background-color: transparent;
 }
-.header__item .choices__item[data-value="2"] {
+.header__item[name="s1"] .choices__item[data-value="2"] {
+  background-image: url("../img/tintoretto.png");
+  background-size: cover;
+}
+
+.header__item[name="s1"] .choices__item[data-value="3"] {
+  background-image: url("../img/fridrih.png");
+  background-size: cover;
+}
+
+.header__item[name="s1"] .choices__item[data-value="4"] {
+  background-image: url("../img/leonardo.png");
+  background-size: cover;
+}
+
+.header__item[name="s1"] .choices__item[data-value="5"] {
+  background-image: url("../img/verroqyo.png");
+  background-size: cover;
+}
+
+.header__item[name="s2"] .choices__item[data-value="2"] {
+  background-image: url("../img/mane.png");
+  background-size: cover;
+}
+
+.header__item[name="s2"] .choices__item[data-value="3"] {
+  background-image: url("../img/mone.png");
+  background-size: cover;
+}
+.header__item[name="s2"] .choices__item[data-value="4"] {
+  background-image: url("../img/renuar.png");
+  background-size: cover;
+}
+.header__item[name="s2"] .choices__item[data-value="5"] {
+  background-image: url("../img/cisley.png");
+  background-size: cover;
+}
+.header__item[name="s3"] .choices__item[data-value="2"] {
+  background-image: url("../img/sezane.png");
+  background-size: cover;
+}
+.header__item[name="s3"] .choices__item[data-value="3"] {
+  background-image: url("../img/gogene.png");
+  background-size: cover;
+}
+.header__item[name="s3"] .choices__item[data-value="4"] {
+  background-image: url("../img/siora.png");
+  background-size: cover;
+}
+.header__item[name="s3"] .choices__item[data-value="5"] {
+  background-image: url("../img/wan\ gog.png");
+  background-size: cover;
+}
+
+.header__item[name="s4"] .choices__item[data-value="2"] {
+  background-image: url("../img/kadinsky.png");
+  background-size: cover;
+}
+.header__item[name="s4"] .choices__item[data-value="3"] {
+  background-image: url("../img/marinetty.png");
+  background-size: cover;
+}
+.header__item[name="s4"] .choices__item[data-value="4"] {
+  background-image: url("../img/malevtch.png");
+  background-size: cover;
+}
+.header__item[name="s4"] .choices__item[data-value="5"] {
+  background-image: url("../img/pikasso.png");
+  background-size: cover;
+}
+.header__item[name="s5"] .choices__item[data-value="2"] {
+  background-image: url("../img/karra.png");
+  background-size: cover;
+}
+.header__item[name="s5"] .choices__item[data-value="3"] {
+  background-image: url("../img/balla.png");
+  background-size: cover;
+}
+.header__item[name="s5"] .choices__item[data-value="4"] {
+  background-image: url("../img/pratella.png");
+  background-size: cover;
+}
+.header__item[name="s5"] .choices__item[data-value="5"] {
+  background-image: url("../img/severiny.png");
+  background-size: cover;
+}
+
+.header__item .choices__item[data-value="6"] {
   background-image: url("../img/choicesItem1.jpg");
   background-size: cover;
 }
-.header__item .choices__item[data-value="3"] {
+.header__item .choices__item[data-value="7"] {
   background-image: url("../img/choicesItem2.jpg");
   background-size: cover;
 }
-.header__item .choices__item[data-value="4"] {
+.header__item .choices__item[data-value="8"] {
   background-image: url("../img/choicesItem3.jpg");
   background-size: cover;
 }
-.header__item .choices__item[data-value="5"] {
+.header__item .choices__item[data-value="9"] {
   background-image: url("../img/choicesItem5.jpg");
   background-size: cover;
 }
-.header__item .choices__item[data-value="6"] {
+.header__item .choices__item[data-value="10"] {
   background-image: url("../img/choicesItem8.jpg");
   background-size: cover;
 }
-.header__item .choices__item[data-value="7"] {
+.header__item .choices__item[data-value="11"] {
   background-image: url("../img/choicesItem6.jpg");
   background-size: cover;
 }
-.header__item .choices__item[data-value="8"] {
+.header__item .choices__item[data-value="12"] {
   background-image: url("../img/choicesItem7.jpg");
   background-size: cover;
 }
-.header__item .choices__item[data-value="9"] {
+.header__item .choices__item[data-value="13"] {
   background-image: url("../img/choicesItem4.jpg");
   background-size: cover;
 }
