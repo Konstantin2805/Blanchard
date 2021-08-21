@@ -13,7 +13,7 @@
 }
 .hero__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   max-width: 580px;
   font-style: normal;
   font-weight: bold;
@@ -25,7 +25,7 @@
 
 .hero__text {
   max-width: 570px;
-  margin-bottom: 113px;
+  margin-bottom: 115px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -255,8 +255,8 @@
     overflow: hidden;
   }
   .hero__title {
-    max-width: calc(315 / 320 * 100%);
-    padding: 0 20px;
+    max-width: 100%;
+    padding: 0 18px;
     margin-bottom: 10px;
 
     font-style: normal;

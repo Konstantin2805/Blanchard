@@ -1,12 +1,11 @@
 .about .container {
-  margin-bottom: 80px;
+  margin-bottom: 69px;
 }
-.cap {
+.about .cap {
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 65px;
-  color: var( --font-color-main);
+
+  color: var(--font-color-main);
 }
 .about .cap {
   margin-bottom: 16px;
@@ -18,7 +17,7 @@
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 0px;
-  color: var( --font-color-main);
+  color: var(--font-color-main);
 }
 @media (max-width: 1024px) {
   .about__text {
@@ -26,24 +25,21 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 786px) {
   .about__text {
-    max-width: 672px;
+    max-width: 673px;
   }
 }
 
 @media (min-width: 300px) and (max-width: 680px) {
-
+  .about .container {
+    margin-bottom: 40px;
+  }
 
   .about .cap {
     margin-top: -20px;
     padding-left: 5px;
     margin-bottom: 13px;
-font-style: normal;
-font-weight: normal;
-font-size: 28px;
-line-height: 38px;
-
   }
   .about__text {
     padding-left: 5px;
